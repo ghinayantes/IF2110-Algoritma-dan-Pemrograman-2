@@ -1,0 +1,10 @@
+Soal 1 — Jarak Tempuh Efektif
+
+Deskripsi. Sebuah kendaraan menempuh jarak d km dengan konsumsi bahan bakar f liter. Efisiensi bahan bakar dihitung sebagai d / f (km per liter). Tuliskan fungsi yang menghitung efisiensi tersebut, dibulatkan tidak perlu (biarkan Real).
+
+Format Masukan: dua bilangan riil d dan f, dipisah spasi.
+Format Keluaran: satu bilangan riil, efisiensi bahan bakar.
+
+Contoh
+Masukan: 120.0 8.0
+Keluaran: 15.0

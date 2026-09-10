@@ -1,0 +1,12 @@
+Soal 4 — Jarak Titik ke Garis (variasi dari distance)
+
+Deskripsi. Diberikan koordinat titik (px, py) dan dua titik lain (x1, y1), (x2, y2) yang mendefinisikan sebuah segmen garis. Hitung keliling segitiga yang dibentuk oleh ketiga titik tersebut (gunakan kembali fungsi distance dari Contoh 1 Bab 3).
+
+Format Masukan: enam bilangan riil px py x1 y1 x2 y2.
+Format Keluaran: satu bilangan riil, keliling segitiga (jumlah tiga sisi).
+
+Contoh
+Masukan: 0.0 0.0 3.0 0.0 0.0 4.0
+Keluaran: 12.0
+
+Catatan. Ini soal "Menulis nomor 5" versi lain di halaman — fokusnya pada pemakaian ulang fungsi antara (distance), bukan menulis ulang rumus jarak dari nol.

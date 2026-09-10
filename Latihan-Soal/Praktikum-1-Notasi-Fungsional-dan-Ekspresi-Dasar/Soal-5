@@ -1,0 +1,11 @@
+Soal 5 — Telusuri Evaluasinya
+
+Deskripsi. Diberikan realisasi berikut:
+
+f (a, b) : let
+               s : a + b
+               d : a - b
+           in
+               s * s - d * d
+
+Tuliskan penelusuran evaluasi lengkap untuk f (5, 2), dengan menyebutkan pada setiap langkah apakah yang terjadi ekspansi atau reduksi — persis format yang dipakai halaman ini untuk distance. Lalu jawab: berapa hasil akhirnya, dan bisakah hasil itu ditulis dalam bentuk lebih sederhana tanpa let (dalam satu ekspresi a dan b langsung)? Buktikan kesetaraannya secara aljabar.

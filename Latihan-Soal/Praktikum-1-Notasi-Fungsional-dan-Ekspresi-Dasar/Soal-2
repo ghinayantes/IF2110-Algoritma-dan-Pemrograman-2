@@ -1,0 +1,14 @@
+Soal 2 — Validasi Sisi Segitiga
+
+Deskripsi. Diberikan tiga bilangan bulat positif a, b, c. Tentukan apakah ketiganya dapat menjadi panjang sisi sebuah segitiga (memenuhi pertidaksamaan segitiga untuk ketiga pasangan sisi sekaligus).
+
+Format Masukan: tiga bilangan bulat a b c.
+Format Keluaran: true atau false.
+
+Contoh 1
+Masukan: 3 4 5
+Keluaran: true
+
+Contoh 2
+Masukan: 1 2 10
+Keluaran: false

@@ -1,0 +1,12 @@
+Soal 3 — Keliling Lingkaran dari Luas
+
+Deskripsi. Diberikan luas sebuah lingkaran luas (bilangan riil positif). Hitung kelilingnya. (Ingat: luas = π·r², keliling = 2·π·r.)
+
+Format Masukan: satu bilangan riil luas.
+Format Keluaran: satu bilangan riil, keliling lingkaran.
+
+Contoh
+Masukan: 78.53975
+Keluaran: 31.4159 (kira-kira)
+
+Catatan. Wajib memakai sqrt dan pi dari fungsi dasar Bab 3. Pikirkan: apakah fungsi ini butuh prasyarat? Kalau r dipakai lebih dari satu kali dalam realisasi, pertimbangkan apakah lebih pantas jadi nama antara atau fungsi antara.
