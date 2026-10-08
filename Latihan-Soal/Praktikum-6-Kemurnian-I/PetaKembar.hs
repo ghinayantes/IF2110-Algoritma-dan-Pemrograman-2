@@ -96,6 +96,8 @@ ta :: BinTree Int
 ta = Node 2 (Node 1 Empty Empty) (Node 3 Empty Empty)
 tb :: BinTree Int
 tb = Node 4 (Node 2 (Node 1 Empty Empty) Empty) (Node 5 Empty (Node 7 Empty Empty))
+tb2 :: BinTree Int
+tb2 = Node 4 (Node 2 (Node 1 Empty Empty) Empty) (Node 5 Empty (Node 7 Empty Empty))
 tp :: BinTree Int
 tp = Node 2 (Node 1 Empty Empty) Empty
 ts :: BinTree Int
@@ -115,7 +117,7 @@ tu = Node 1 (Node 2 Empty Empty) (Node 2 Empty Empty)
 --   petaSama tp ta == False
 -- TODO: Lengkapi fungsi sesuai spesifikasi.
 petaSama :: BinTree Int -> BinTree Int -> Bool
-petaSama t1 t2 = error "TODO"
+petaSama t1 t2 = t1 == t2
 
 -- SPESIFIKASI
 -- petaPotongan s t bernilai True bila s adalah sebuah upapohon dari t, yaitu terdapat simpul pada t (atau t sendiri) yang beserta seluruh keturunannya persis sama dengan s.
@@ -127,7 +129,9 @@ petaSama t1 t2 = error "TODO"
 --   petaPotongan tb tb == True
 -- TODO: Lengkapi fungsi sesuai spesifikasi.
 petaPotongan :: BinTree Int -> BinTree Int -> Bool
-petaPotongan s t = error "TODO"
+petaPotongan Empty _ = True
+petaPotongan _ Empty = False
+petaPotongan s (Node a l r) = s == (Node a l r) || (petaPotongan s l) || (petaPotongan s r)
 
 -- SPESIFIKASI
 -- petaSimetris t bernilai True bila subpohon kiri dan kanan t saling bercermin, yaitu bentuknya merupakan pencerminan dan nilai simpul yang bersesuaian sama.
@@ -140,4 +144,10 @@ petaPotongan s t = error "TODO"
 --   petaSimetris tt == False
 -- TODO: Lengkapi fungsi sesuai spesifikasi.
 petaSimetris :: BinTree Int -> Bool
-petaSimetris t = error "TODO"
+petaSimetris Empty = True
+petaSimetris (Node _ l r) = bercermin l r
+  where
+    bercermin Empty Empty = True
+    bercermin (Node a l1 r1) (Node b l2 r2) = a == b && bercermin l1 r2 && bercermin r1 l2
+    bercermin _ _ = False
+
