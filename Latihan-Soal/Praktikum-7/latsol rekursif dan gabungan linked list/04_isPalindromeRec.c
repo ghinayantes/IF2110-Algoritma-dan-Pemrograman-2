@@ -44,11 +44,11 @@ boolean checkPal(List right, List *left) {
         return true;
     }
 
-    else if (!checkPal(NEXT(right), left)) {
+    if (!checkPal(NEXT(right), left)) {
         return false;
     }
 
-    else if (INFO(right) != INFO(*left)) {
+    if (INFO(right) != INFO(*left)) {
         return false;
     }
 

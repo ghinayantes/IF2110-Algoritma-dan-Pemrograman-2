@@ -53,6 +53,35 @@ void deleteAtRec(List *l, int idx, ElType *val) {
     }
 }
 
+void displayRest(List l) {
+    /* ALGORITMA */
+    /* TODO: tulis algoritma di sini */
+    if (l == NULL) printf("]\n");
+    else {
+        printf(",%d", INFO(l));
+        l = NEXT(l);
+        displayRest(l);
+    }
+}
+
+void displayListRec(List l) {
+    /* KAMUS LOKAL
+     *
+     * (tidak ada variabel lokal yang wajib)
+     */
+
+    /* ALGORITMA */
+    /* TODO: tulis algoritma di sini */
+    if (l == NULL) {
+        printf("[");
+        displayRest(l);
+    }
+    else {
+        printf("[%d", INFO(l));
+        displayRest(NEXT(l));
+    }
+}
+
 int main() {
     List l;
     int val;
